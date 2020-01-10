@@ -30,7 +30,7 @@
 
 Name:           maven-scm
 Version:        1.8.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Common API for doing SCM operations
 License:        ASL 2.0
 Group:          Development/Libraries
@@ -128,6 +128,9 @@ sed -i s/cvsjava.CvsJava/cvsexe.CvsExe/ maven-scm-client/src/main/resources/META
 %doc LICENSE NOTICE
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.8.1-2
+- Mass rebuild 2013-12-27
+
 * Sun Aug 25 2013 Mat Booth <fedora@matbooth.co.uk> - 1.8.1-1
 - Fix removal of cvs java provider, rhbz #962273
 - Update to latest upstream
